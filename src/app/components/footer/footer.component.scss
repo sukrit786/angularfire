@@ -1,0 +1,110 @@
+.page-footer{
+    margin-top: 0;
+    width: 100%;
+    background: 	#3d3d4c;
+    position: relative;
+    height: max-content;
+    clear: both;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    bottom: -10px;
+    // grid-gap: 10px;
+    color: white;
+    // grid-column-gap:20px ;
+    padding: 50px;
+    grid-template-areas: 
+    "address address quicklink services solution";
+}
+.page-footer-item-1 {
+    grid-area: address;
+}
+.page-footer-item-2 {
+  grid-area: quicklink;
+}
+.page-footer-item-3 {
+  grid-area: services;
+}
+.page-footer-item-4 {
+  grid-area: solution;
+}
+.footer-copyright {
+  background:#27282d;
+  position:absolute;
+  height: 8vh;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 5px;
+}
+.footer-copyright > p{
+  font-size: 2vh;
+  margin: 2px;
+  box-sizing: border-box;
+  padding: 2px;
+}
+.page-footer h2 ,h3 {
+  color: white;
+  font-weight:500;
+  font-size: 1.5rem;
+}
+.page-footer a{
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+  margin: 2px;
+}
+.page-footer li {
+  margin: 4px;
+}
+@media (max-width: 767px) {
+  
+  .page-footer{
+    width: 100%;
+    background: #3d3d4c;
+    position: relative;
+    height: max-content;
+    clear: both;
+    text-align: center;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    bottom: -10px;
+    grid-column-gap:20px ;
+    grid-gap: 10px;
+    color: white;
+    padding: 50px;
+    grid-template-areas: 
+    "address address address address address"
+    "quicklink quicklink quicklink quicklink quicklink"
+    "solution solution solution solution solution"
+    "services services services services services";
+  }
+}
+  
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .page-footer{
+    width: 100%;
+    background: #3d3d4c;
+    position: relative;
+    height: max-content;
+    clear: both;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    bottom: 10px;
+    grid-column-gap:20px ;
+    grid-gap: 10px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    grid-template-areas: 
+    "address address quicklink services solution";
+  }
+
+    .footer-copyright > p{
+      font-size: 1vh;
+      margin: 2px;
+      box-sizing: border-box;
+      padding: 2px;
+    }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Bebas+Neue&display=swap');
+#bbox {
+    overflow: hidden;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+    background: #f5f8fd url('/assets/img/image2.jpg') top no-repeat;
+    background-size: cover;
+    
+}
+.overlay{
+    top: 0;
+    position: absolute;
+    height: 70vh;
+    background: #27282d;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    margin-top: 9vh;
+    #textover{
+        width: 40%;
+        margin-left: 10vw;
+        color:black;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 8vh;
+    }
+    .content{
+        width: 45%;
+        margin-left: -10vh;
+        justify-content: flex-end;
+    }
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    #s2head{
+        font-family: 'Alatsi', sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+    .box2 {
+        h4{
+            font-weight: 700;
+        }
+        display: grid;
+        margin-top:20vh;
+        grid-template-columns: repeat(3,1fr);
+        grid-template: 
+        "b1 b2 b3"
+        "b4 b5 b6";
+        &-sbox1{
+            grid-area: b1;
+        }
+        &-sbox2{
+            grid-area: b2;
+        }
+        &-sbox3{
+            grid-area: b3;
+        }
+        &-sbox4{
+            grid-area: b4;
+        }
+        &-sbox5{
+            grid-area: b5;
+        }
+        &-sbox6{
+            grid-area: b6;
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .box{
+        display: inline;
+        .content{
+            width: 100%;
+            margin-left: 0;
+            padding: 15px;
+            // justify-content: flex-end;
+        }
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        #s2head{
+            font-family: 'Alatsi', sans-serif;
+            color: black;
+            font-weight: 600;
+        }
+        .box2 {
+            h4{
+                font-weight: 700;
+            }
+            display: grid;
+            margin-top:20vh;
+            grid-template-columns: repeat(3,1fr);
+            grid-template: 
+            "b1 b1 b1"
+            "b2 b2 b2"
+            "b3 b3 b3"
+            "b4 b4 b4"
+            "b5 b5 b5"
+            "b6 b6 b6";
+            padding: 14px;
+        }
+    }
+}

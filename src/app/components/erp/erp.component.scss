@@ -1,0 +1,93 @@
+.carousel-item {
+    height: 10vh;
+    min-height: 380px;
+    background:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .box {
+    // background-color: lightgray;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 200px;
+    margin-left: 20px;
+  }
+  .box::before,
+  .box::after {
+    background-color: dodgerblue;
+    content: "";
+    position: absolute;
+    transform: translate3D(0, 100%, 0);
+    transition: transform 200ms linear;
+    transition-delay: 200ms;
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+  }
+  .box::before {
+    right: 0;
+    left: auto;
+  }
+  .box::after {
+    left: 0;
+  }
+  .box__content::after {
+    content: "";
+    height: 2px;
+    border-bottom: 2px solid dodgerblue;
+    bottom: 0;
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    transition: left 200ms linear, right 200ms linear;
+    /* double delayed time for transition */
+    transition-delay: 400ms;
+  }
+  .box__content-wrap::before,
+  .box__content-wrap::after {
+    border-top: 2px solid dodgerblue;
+    content: "";
+    position: absolute;
+    top: 0;
+    transition: transform 200ms linear;
+    width: 50%;
+  }
+  .box__content-wrap::before {
+    left: 0;
+    transform: translate3D(-101%, 0, 0);
+  }
+  .box__content-wrap::after {
+    right: 0;
+    transform: translate3D(101%, 0, 0);
+  }
+  .box:hover::before,
+  .box:hover::after {
+    transform: translate3D(0, 0, 0);
+    transition: transform 200ms linear;
+    transition-delay: 200ms;
+  }
+  .box:hover .box__content::after {
+    right: 1%;
+    left: 1%;
+    transition: left 200ms linear, right 200ms linear;
+  }
+  .box:hover .box__content-wrap::before,
+  .box:hover .box__content-wrap::after {
+    transform: translate3D(0, 0, 0);
+    transition: transform 200ms linear;
+    /* double delayed time for transition */
+    transition-delay: 400ms;
+  }
+  

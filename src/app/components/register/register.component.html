@@ -1,0 +1,24 @@
+<h1>Register User</h1>
+<div class="container">
+    <form #form="ngForm" autocomplete="off" (submit)="submit(form)"> 
+        {{authError}}
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="ctrl.formData.name" placeholder="Enter name" required>
+            <div *ngIf="name.touched && name.invalid">Some errors in form</div>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" #email="ngModel" [(ngModel)]="ctrl.formData.email" placeholder="Enter email" required>
+            <div *ngIf="email.touched&&email.invalid">Some errors in form</div>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" #password="ngModel" [(ngModel)]="ctrl.formData.password" placeholder="Enter password" required>
+            <div *ngIf="password.touched && password.invalid">Some errors in form</div>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password2" #password2="ngModel" [(ngModel)]="ctrl.formData.password2" placeholder="Confirm Password" pattern="{{password.value}}" required>
+            <div *ngIf="password2.touched && password2.invalid">Some errors in form</div>
+            <div *ngIf="password2.errors?.pattern">Passwords dont match</div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-info btn-block" [disabled]="form.invalid">
+    </form>
+</div>

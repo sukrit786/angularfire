@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+
+#services {
+    padding: 60px 0 40px 0;
+    #title{
+      margin-top: 10vh;
+      color: #72bcd4;
+      font-family: 'Alatsi', sans-serif;
+      font-size: 15vh;
+      opacity: 0.8;
+    }
+  }
+  
+  #services .box-column {
+    width: 350px;
+    width:100%; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  #services .box-column:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+  
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  #services .title a {
+    color: #111;
+  }
+  
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+  
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  
+
+.box{
+    background-color: #eee;
+    padding: 60px 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .box-top{
+    padding: 50px 0px;
+    background: #dedede;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .box-top .fa{
+    color: #FFF;
+  }
+  
+  .box-top.instagram{
+    background: linear-gradient(45deg, #f2935b, #6f49c0);
+  }
+  
+  .box-top.twitter{
+    background: linear-gradient(45deg, #cae1f3, #55aded);
+  }
+  
+  .box-top.facebook{
+    background: linear-gradient(45deg, #95a2c1, #3b579d);
+  }
+  
+  .box-bottom{
+    background: #FFF;
+    padding: 30px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .box-bottom .box-text{
+    padding: 20px 0px; 
+  }
+  
+  .box-bottom .instagram-title{
+    background: linear-gradient(45deg, #f2935b, #6f49c0);
+    font-weight: 600;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;  
+  }
+  
+  .box-bottom .twitter-title{
+    background: linear-gradient(45deg, #cae1f3, #55aded);
+    font-weight: 600;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;  
+  }
+  
+  .box-bottom .facebook-title{
+    font-size: 20px; 
+    font-weight: 600;
+    color: #428bca;
+  }
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #services {
+      #title{
+        margin-top: 10vh;
+        font-family: 'Alatsi', sans-serif;
+        font-size: 10vh;
+        opacity: 0.8;
+      }
+    }
+    .dab{
+      // background: red;
+      margin-left: -12px;
+    }
+}
+@media screen
+  and (min-device-width: 2559px) {
+      #services{
+        margin-left:330px;
+      }
+    .ll{
+      font-size:30px;
+    }
+    .kp{
+      margin-left:-700px;
+    }
+    .kkpp{
+      margin-left: 350px;
+    }
+    .kkp{
+      margin-left:350px;
+    }
+    #services .box-column {
+      width:200%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      // margin: 0 10px 40px 10px;
+      background: #fff;
+      box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+    .box-top{
+      padding: 90px 0px;
+      background: #dedede;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .box-bottom .box-text{
+      padding: 20px 0px; 
+      font-size: 40px;
+    }
+    .box-bottom .instagram-title{
+      background: linear-gradient(45deg, #f2935b, #6f49c0);
+      font-weight: 600;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;  
+    }
+    
+    .box-bottom .twitter-title{
+      background: linear-gradient(45deg, #cae1f3, #55aded);
+      font-weight: 600;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;  
+    }
+    
+    .box-bottom .facebook-title{
+      font-size: 50px; 
+      font-weight: 600;
+      color: #428bca;
+    }
+  }

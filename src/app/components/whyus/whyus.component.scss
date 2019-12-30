@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Oswald&display=swap");
+#hire {
+  margin-top: 30vh;
+  height: max-content;
+  .heading {
+    h1 {
+      font-size: 7vh;
+      padding: 20px;
+      font-family: "Anton", sans-serif;
+      opacity: 0.8;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      width: max-content;
+      margin: auto;
+    }
+  }
+}
+#imgbox {
+  height: 60vh;
+  background: #f5f8fd url("/assets/img/hireus.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.box {
+  display: flex;
+  width: 100%;
+  margin-top: 8vh;
+  .column1 {
+      padding: 100px;
+      
+      margin-top: 12vh;
+  padding-bottom: 0;
+    width: 50%;
+    h2 {
+      font-family: "Anton", sans-serif;
+      margin-bottom: 5vh;
+    }
+  }
+  .column2 {
+        
+    height: 130%; 
+    width: 100%;
+        width: 50%;
+      background: url("/assets/img/why-us1.jpg");
+      /* Set a specific height */
+      min-height: 700px; 
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+  &:nth-last-child(1) {
+      
+    margin-top: 0;
+    flex-direction: row-reverse;
+    .column2 {
+        
+    height: 130%; 
+    width: 100%;
+        width: 50%;
+      background: url("/assets/img/why-us2.jpg");
+  
+      /* Set a specific height */
+      min-height: 700px; 
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.boxx {
+  position: relative;
+  vertical-align: middle;
+  color: lightgrey;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  -webkit-transition: 0.5s;
+}
+
+.boxx:hover {
+  border: 2px solid rgba(0, 160, 80, 0);
+  color: #000;
+  transform: scale(1.2);
+}
+
+.boxx::before,
+.boxx::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.foo::before {
+  border-bottom: 3px solid #000;
+  border-left: 3px solid #000;
+  -webkit-transform-origin: 0 100%;
+}
+
+.foo::after {
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.boxx:hover::after,
+.boxx:hover::before {
+  -webkit-transform: scale(1);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .box {
+    display: flex;
+    width: 100%;
+    margin-top: 8vh;
+    .column1 {
+        padding: 100px;
+      margin-top: 0;
+    padding-bottom: 0;
+      width: 50%;
+      h2 {
+        font-family: "Anton", sans-serif;
+        margin-bottom: 5vh;
+      }
+    }
+    .column2 {
+          
+      height: 130%; 
+          width: 50%;
+        background: url("/assets/img/why-us1.jpg");
+    
+        /* Set a specific height */
+        min-height: 500px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:nth-last-child(1) {
+          
+        margin-top: 0;
+        flex-direction: row-reverse;
+        .column2 {
+            
+        height: 130%; 
+        width: 50%;
+          background: url("/assets/img/why-us2.jpg");
+      
+          /* Set a specific height */
+          min-height: 500px; 
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+}
+}
+@media screen and (min-width:450px) and (max-width: 768px) {
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+    padding: 10px;
+    margin-left: 0;
+    .column1 {
+      width: 100%;
+      margin-top: 0;
+      padding: 2px;
+      h2{
+        margin-left: 40%;
+      }
+      a{
+        margin-left: 40%;
+      }
+      h2 {
+        margin-top: 2vh;
+        font-family: "Anton", sans-serif;
+        margin-bottom: 5vh;
+      }
+    }
+    .box:nth-last-child(1) {
+      flex-direction: column-reverse;
+    }
+    .column2 {
+      margin-top: 5vh;
+      width: 100%;
+      height: auto;
+      background-attachment:scroll;
+      background-size: cover;
+    }
+    &:nth-last-child(1) {
+      flex-direction: column-reverse;
+      .column2 {
+        margin-top: 5vh;
+        width: 100%;
+        height: auto;
+        background-attachment:scroll;
+        background-size: cover;
+      }
+    }
+  }
+  #hire {
+    .heading {
+      h1 {
+        font-size: 5vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 449px) {
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+    padding: 10px;
+    margin-left: 0;
+    .column1 {
+      width: 100%;
+      margin-top: -20vh;
+      padding: 2px;
+      h2{
+        margin-left: 25%;
+      }
+      a{
+        margin-left: 30%;
+      }
+    }
+    .box:nth-last-child(1) {
+      flex-direction: column-reverse;
+    }
+    .column2 {
+      margin-top: -25vh;
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-attachment:scroll;
+      background-size: contain;
+    }
+    &:nth-last-child(1) {
+      flex-direction: column-reverse;
+      .column1{
+        margin-top: -20vh;
+      }
+      .column2 {
+        margin-top: -25vh;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-attachment:scroll;
+        background-size: contain;
+      }
+    }
+  }
+  #hire {
+    .heading {
+      h1 {
+        font-size: 5vh;
+      }
+    }
+  }
+}

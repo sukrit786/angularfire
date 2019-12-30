@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+// h1, h2, h3, h4, h5, h6 {
+//     font-family: "Montserrat", sans-serif;
+//     font-weight: 400;
+//     margin: 0 0 20px 0;
+//     padding: 0;
+// }
+.carousel-item {
+    height: 55vh;
+    min-height: 250px;
+    background:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

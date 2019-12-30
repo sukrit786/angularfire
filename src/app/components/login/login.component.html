@@ -1,0 +1,107 @@
+<!-- <div class="container">
+    <h1 class="text-center">Login Form</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <img src='/assets/img/person.png' class="img-responsive img-fluid" alt="loginimg">
+        </div>
+        <div class=".col-md-4">
+            <form #form="ngForm" (submit)="submit(form)" autocomplete="off">
+                {{ authError }}
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" ngModel #email="ngModel"
+                        placeholder="Enter email" required>
+                    <div *ngIf="email.touched&&email.invalid">Some errors in form</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" ngModel #password="ngModel"
+                        placeholder="Enter password" required>
+                    <div *ngIf="password.touched && password.invalid">Some errors in form</div>
+                </div>
+                <input type="button" value="submit" class="btn btn-block btn-info" (click)="onsubmit(form)">
+            </form>
+        </div>
+    </div>
+
+</div> -->
+<!-- <div class="content-box">
+  <div class="content-box-row-items">
+    <div class="content-box-row-items-1">
+      <h1 class="text-center">Login</h1>
+      <h6 class="text-center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+        obcaecati doloremque eligendi, voluptas repudiandae est aut nobis ipsam
+        et reiciendis? Eligendi quod adipisci eius soluta, sapiente quia
+        suscipit eos amet?
+      </h6>
+    </div>
+    <div class="content-box-row-items-2">
+      <div class="box-form">
+      </div>
+    </div>
+  </div>
+</div> -->
+<app-header></app-header>
+<section id="login">
+  <div class="box-row">
+    <div class="row1">
+      <h1 class="text-center">EMICON</h1>
+      <h3 class="text-center">Welcome's You</h3>
+      <h6 class="text-center">
+        Emicon delivers IT enabled business transformation initiatives within
+        organizations. These help organizations in the public, and private
+        sectors operate more efficiently and profitably. Through our highly
+        collaborative consulting style, we work with our clients to transform
+        their business, enabling them to focus on what they do best and leave
+        their back office and operational enablement on us.
+      </h6>
+    </div>
+    <div class="row2">
+      <form #form="ngForm" (submit)="onsubmit(form)" autocomplete="off">
+        <h2 class="text-center">LogIn</h2>
+        <div class="row" *ngIf="authError">
+          <div class="alert alert-warning alert-dismissible">
+            {{ authError?.message }}
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            ngModel
+            #email="ngModel"
+            placeholder="Enter email"
+            required
+          />
+          <span class="highlight"></span><span class="bar"></span>
+          <div *ngIf="email.touched && email.invalid">
+            <p>This field is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            ngModel
+            #password="ngModel"
+            placeholder="Enter password"
+            required
+          />
+
+          <span class="highlight"></span><span class="bar"></span>
+          <div *ngIf="password.touched && password.invalid">
+            <p>This field is required</p>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="btn btn-block btnn"
+        />
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- format code ctrl+k ++ ctrl+f -->

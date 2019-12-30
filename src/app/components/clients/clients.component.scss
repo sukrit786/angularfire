@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+
+
+@media screen 
+  and (min-device-width: 1023px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .box{
+        display: flex;
+        .area{
+            width: 45%;
+            margin-left: 100px;
+            font-family: 'Cuprum', sans-serif;
+            font-size: 4vw;
+            font-weight: 600;
+            z-index: 1;
+        }
+        .owl{
+            margin-top: 20px;
+            width: 50%;
+        }
+        width: 100%;
+        background: #f1f1f1;
+        box-sizing: border-box;
+        padding: 30px;
+        margin-top: -20px;
+    }
+}
+@media screen
+and (min-device-width: 2559px) {
+    .box{
+        display: flex;
+        .area{
+            width: 45%;
+            margin-left: 100px;
+            font-family: 'Cuprum', sans-serif;
+            font-size: 4vw;
+            font-weight: 600;
+            z-index: 1;
+        }
+        .owl{
+            margin-top: 50px;
+            width: 50%;
+        }
+        width: 100%;
+        background: #f1f1f1;
+        box-sizing: border-box;
+        padding: 30px;
+        margin-top: -20px;
+    }
+}
+
+.tagline{
+    margin-top:20vh;
+    position: relative;
+    text-align: end;
+    margin-right: 28%;
+    z-index: 999;
+    #some{
+        font-family: 'Odibee Sans', cursive;
+        margin-bottom: 30vh;
+        font-size: 10vh;
+    }
+}
+#para {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    border: 20px solid lightgray;
+    right:-50px;
+    top: -14px;
+    z-index: -1;
+}
+
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .box{
+        .area{
+            width: 100%;
+            margin-left: 100px;
+            font-family: 'Cuprum', sans-serif;
+            font-size: 4vw;
+            font-weight: 600;
+            z-index: 1;
+        }
+        .owl{
+            width: 100%;
+        }
+        width: 100%;
+        background: #f1f1f1;
+        box-sizing: border-box;
+        padding: 30px;
+        margin-top: -20px;
+    }
+    
+    #para{
+        display: none;
+    }
+    .tagline{
+        margin-top:7vh;
+        text-align: end;
+        margin-right: 23%;
+        z-index: 999;
+        #some{
+            font-family: 'Gelasio', serif;
+            margin-bottom: 5vh;
+            font-size: 2.7vh;
+        }
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+// #clients{
+//     overflow: hidden;
+//     max-width: 100%;
+//     height: 100vh;
+//     position: relative;
+//     background: #f5f8fd url('/assets/img/4389.jpg');
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }

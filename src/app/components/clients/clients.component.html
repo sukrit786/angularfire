@@ -1,0 +1,22 @@
+<section id="clients">
+    <div class="box">
+        <div class="area">Our Happy Clients
+            <div id="parallelogram"></div>
+        </div>
+        <div class="owl">
+            <owl-carousel #owlElement [options]="CarouselOptions" [items]="Images" [carouselClasses]="['owl-theme', 'row', 'sliding']" >  
+                <div class="item" *ngFor="let img of Images">  
+                    <div style="align-content: center">  
+                        <img class="thumbnail-image" style="height: 100%;width:100%"src={{img}}/>  
+                    </div>  
+                </div>  
+            </owl-carousel>  
+        </div>
+    </div>
+    <div class="tagline">
+        <h2 id="some"> Emicon's services helps you in<br>
+        <span>Empowering your business</span> </h2>
+        
+        <div id="para"></div>
+    </div>
+</section>

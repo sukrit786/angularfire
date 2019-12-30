@@ -1,0 +1,7 @@
+<h4>Home</h4>
+<p *ngIf="user">Logged In as {{user?.email}}=>{{user.displayName}}</p>
+
+<button class="btn btn-primary" *ngIf="!user" (click)="register()">Register</button>
+<!-- just call logout methhod -->
+<button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button>
+<button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button>

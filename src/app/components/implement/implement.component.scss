@@ -1,0 +1,108 @@
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+// h1, h2, h3, h4, h5, h6 {
+//     font-family: "Montserrat", sans-serif;
+//     font-weight: 400;
+//     margin: 0 0 20px 0;
+//     padding: 0;
+// }
+// @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800,900&display=swap');
+
+$color-1: yellow;
+$color-2: black;
+$color-3: gray;
+$color-4: lightcyan;
+$color-5: orange;
+$color-6: pink;
+
+$transition-time: 5;
+$delay-time: .5;
+
+body{
+  background: $color-6;
+  margin: 0;
+}
+
+.ab{
+  align-items: center;
+  width: 84%;
+  margin-left:8%;
+  margin-top:2%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+//   border-radius: 10px;
+//   margin-top: 100px;
+}
+
+ a{
+  z-index: 1;
+//   font-family: 'Raleway', sans-serif;
+  font-size: 10vw;
+  margin: auto;
+//   width:600px; 
+  font-weight: 700;
+  display: inline;
+    background: conic-gradient(
+    $color-3 10%, 
+    $color-5 10%, 
+    $color-5 20%, 
+    $color-4 20%, 
+    $color-4 40%, 
+    $color-3 40%, 
+    $color-3 63%, 
+    $color-5 63%, 
+    $color-5 80%, 
+    $color-4 80%,
+    $color-4 95%, 
+    $color-2 95%,
+    $color-2 100%, 
+    $color-5 100%,
+    
+  );
+  
+  background-size: 20%;
+  background-repeat: repeat-x;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+.name a:nth-child(1){
+  position: relative;
+//   top: -100px;
+  opacity: 1;
+  animation: loading-animation ($transition-time * 1s);
+}
+
+// @keyframes clear-animation{
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+@keyframes ellipsis-animation {
+  0% {
+    opacity: 0;
+  }
+  1%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading-animation {
+  0% {
+    opacity: 1;
+    background-position: 0 -5em;
+  }
+  50% {
+    opacity: 1;
+    background-position: 0 .25em;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+}
+
